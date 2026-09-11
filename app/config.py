@@ -9,7 +9,6 @@ class Settings(BaseSettings):
     # API Keys
     openai_api_key: str
     tavily_api_key: str
-    google_api_key: str
     
     # Qdrant
     qdrant_url: str = "http://localhost:6333"
@@ -18,7 +17,7 @@ class Settings(BaseSettings):
     
     # OpenAI Models
     embedding_model: str = "text-embedding-3-small"
-    llm_model: str = "gemini-2.5-flash"
+    llm_model: str = "gpt-4o-mini"
     embedding_dimensions: int = 1536
     
     # CRAG Settings
